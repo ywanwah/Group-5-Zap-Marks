@@ -174,7 +174,19 @@ const agents = [
       ["Off switch", "I turn the Zap off after class on Wednesday 21 October, and the script stops checking after that day."]
       ]
   },
-  { owner: "Member 3", name: "Agent name to add", quadrant: "", card: [] },
+{
+  owner: "Shantanu",
+  name: "Customer Complaint Escalation Agent",
+  quadrant: "tl",
+  card: [
+    ["Trigger", "A new customer complaint is submitted through Google Forms and recorded in Google Sheets."],
+    ["Action", "Zapier sends a Gmail notification with the complaint details to my personal inbox."],
+    ["Filtering", "No automatic filtering. Every complaint triggers an email, regardless of urgency."],
+    ["Output", "An email containing customer name, order ID, complaint category, description, and urgency level for human review."],
+    ["Off switch", "I will turn off the Zap after class on Wednesday 21 October."]
+  ]
+},
+  
   { owner: "Member 4", name: "Agent name to add", quadrant: "", card: [] }
 ];
 
