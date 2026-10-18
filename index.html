@@ -187,7 +187,18 @@ const agents = [
   ]
 },
   
-  { owner: "Member 4", name: "Agent name to add", quadrant: "", card: [] }
+   {
+    owner: "Chenxi",
+    name: "Job Alert move into excel - Chenxi",
+    quadrant: "bl",
+    card: [
+      ["The job", "Logs each internship alert email into one Google Sheet (Internship Tracker), for me as a job-seeking MSc Business AI student."],
+      ["The trigger", "A new email in my personal Gmail gets the “Job-Alerts” label, which two Gmail filters apply automatically: one for LinkedIn job alerts, and one for test emails I send to myself with “intern” in the subject."],
+      ["The tools", "Gmail (New Labeled Email, read only) and Google Sheets (Create Spreadsheet Row in Internship Tracker: date, sender, subject, body)."],
+      ["It must never", "Reply to or send any email for me. The setting that stops it: the Zap has only one action, Google Sheets “Create Spreadsheet Row”, and no step that sends email."],
+      ["Where a person checks", "I read the new rows in Internship Tracker every morning and decide which internships to apply for."]
+    ]
+  }
 ];
 
 const quadNames = {
