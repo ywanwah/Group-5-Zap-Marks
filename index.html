@@ -136,6 +136,37 @@
   <div class="cards" id="cards"></div>
 
   <p class="note">Public page: no email addresses, client data or keys. Estimates are rough rules of thumb, not financial advice. All four Zaps are turned off after class on Wednesday 21 October.</p>
+
+
+<section id="shantanu-analysis" style="margin-top:40px; padding:24px; border:1px solid #dce3eb; border-radius:12px; background:#f8fafc; color:#1c3157;">
+  <h2>Customer Complaint Escalation Agent — Shantanu</h2>
+  <p><strong>Week 7 | Step 3: Human-AI Collaboration Analysis</strong></p>
+
+  <h3>Q1. Position on the Human-AI Map</h3>
+
+  <p><strong>(a) Quadrant:</strong> AI alone, with checks (bottom-left).</p>
+
+  <p><strong>(b) Justification:</strong> The notification task has a right answer: when a new complaint is submitted, the correct complaint information should reach the reviewer. The task can be automated without manually copying information between Google Sheets and Gmail. Five successful Zap runs confirmed that the notification workflow functioned as intended. However, deciding whether a complaint genuinely requires escalation is a separate judgment.</p>
+
+  <p><strong>(c) Person in the loop:</strong> Zapier detects new complaints and sends Gmail notifications automatically. A person checks the complaint description, whether the issue remains unresolved, and whether escalation is necessary. TEST-1005 revealed that a Critical complaint could already be resolved. We added a human-review checklist and successfully retested this scenario using TEST-1006. If the system began independently making complex escalation decisions, we would reconsider its quadrant placement.</p>
+
+  <p><strong>(d) Group view:</strong> Our group page currently places this agent in the bottom-left quadrant. I agree with this placement for the automated notification task because it is repetitive and has a clearly defined output. However, actual escalation decisions require human judgment. This interpretation should be discussed and confirmed with the group.</p>
+
+  <h3>Collaboration Log</h3>
+  <p><strong>Delegated:</strong> Detecting new complaints in Google Sheets and sending structured Gmail notifications.</p>
+  <p><strong>Checked:</strong> Compared Google Forms submissions, Google Sheets entries, Zap History, and received emails. Five exported runs were successful.</p>
+  <p><strong>Error caught:</strong> TEST-1005 was marked Critical even though its description said the issue had already been resolved. The Zap still sent an alert.</p>
+  <p><strong>Improvement:</strong> Added an escalation-review checklist and retested with TEST-1006. The reviewer now receives explicit instructions to check resolution status before escalating.</p>
+  <p><strong>Time and cost:</strong> Each successful run recorded one task in Zap History. No additional paid Zap steps were introduced. Exact development time was not recorded.</p>
+
+  <h3>Three-Sentence Reflection</h3>
+  <p>The agent successfully automated the transfer of customer complaint information from Google Sheets to Gmail. However, the tricky case demonstrated that a successful automation run does not necessarily mean the correct business decision has been made. I would improve the workflow by introducing AI-assisted complaint classification and resolution detection while retaining human approval for important escalation decisions.</p>
+
+  <h3>Step 2 — Testing Evidence</h3>
+  <p>Screenshots of successful runs, the tricky case, and the improved retest will be added here.</p>
+</section>
+
+
 </main>
 
 <script>
